@@ -13,5 +13,5 @@ pool:
           npm install
           npm run lint
           npm run test
-          npm run prod-build-dev
+          npm run build --prod
   displayName: '⦿ Lint done & Karma tests is done & [PROD - Build] ➡ Finished ✔'
