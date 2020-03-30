@@ -13,11 +13,7 @@ steps:
 - script: echo Beggining!
   displayName: 'Run a one-line script'
 
-- script: npm run lint 
-  displayName: 'Lint done'
-  
- - script: npm run test
-  displayName: 'Karma tests is done'
-
-- script: npm run prod-build-dev
-   displayName: ' ⦿ [PROD - Build] ➡ Finished ✔'
+- script: npm run lint
+          npm run test
+          npm run prod-build-dev
+  displayName: 'Lint done & Karma tests is done & ⦿ [PROD - Build] ➡ Finished ✔'
