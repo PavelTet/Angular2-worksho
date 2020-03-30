@@ -19,6 +19,7 @@ steps:
   - script:
       npm install
       npm run build --prod
+      ls
     displayName: '⦿ Lint done & Karma tests is done & [PROD - Build] ➡ Finished ✔'
 
   - script:
