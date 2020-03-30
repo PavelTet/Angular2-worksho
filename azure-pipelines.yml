@@ -10,6 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- script: echo Beggining!
+  displayName: 'Run a one-line script'
+
 - script: npm run lint 
   displayName: 'Lint done'
   
