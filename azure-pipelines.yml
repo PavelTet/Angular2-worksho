@@ -21,3 +21,11 @@ steps:
       npm run test
       npm run build --prod
     displayName: '⦿ Lint done & Karma tests is done & [PROD - Build] ➡ Finished ✔'
+
+  - task: ArchiveFiles@2
+    inputs:
+        rootFolderOrFile: 'dist'
+        includeRootFolder: true
+        archiveType: 'zip'
+        archiveFile: 'dist2.zip'
+        replaceExistingArchive: true
