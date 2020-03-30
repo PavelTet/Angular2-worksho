@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "OperatorApp"
+    }
+  },
+  "defaultProject": "OperatorApp",
+  "cli": {
+    "analytics": false
+  }
 }
