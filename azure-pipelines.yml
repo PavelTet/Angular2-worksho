@@ -9,7 +9,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-- script: |
+- script:
           npm install
           npm run lint
           npm run test
