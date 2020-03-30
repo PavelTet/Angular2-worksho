@@ -27,6 +27,9 @@ steps:
       rootFolder: '$(System.DefaultWorkingDirectory)' #name of your project on angular.json .defaultProject value
       includeRootFolder: false
 
+  - script:
+      echo ls
+      
   - task: CopyFiles@2
     displayName: 'Copy File to: $(TargetFolder)'
     inputs:
