@@ -18,15 +18,13 @@ steps:
 
   - script:
       npm install
-      npm run lint
-      npm run test
       npm run build --prod
     displayName: '⦿ Lint done & Karma tests is done & [PROD - Build] ➡ Finished ✔'
 
   - task: ArchiveFiles@1
     displayName: 'Archive files '
     inputs:
-      rootFolder: '$(System.DefaultWorkingDirectory)/Angular2-worksho/dist/operator-app' #name of your project on angular.json .defaultProject value
+      rootFolder: '$(System.DefaultWorkingDirectory)/Angular2-worksho/dist/OperatorApp' #name of your project on angular.json .defaultProject value
       includeRootFolder: false
 
   - task: CopyFiles@2
