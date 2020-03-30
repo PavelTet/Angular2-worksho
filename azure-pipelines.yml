@@ -29,7 +29,8 @@ steps:
 
   - script:
       echo ls
-      
+    displayName: '⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿'
+
   - task: CopyFiles@2
     displayName: 'Copy File to: $(TargetFolder)'
     inputs:
