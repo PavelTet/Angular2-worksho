@@ -28,7 +28,7 @@ steps:
       includeRootFolder: false
 
   - script:
-      echo ls
+      ls
     displayName: '⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿'
 
   - task: CopyFiles@2
