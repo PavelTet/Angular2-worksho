@@ -21,15 +21,15 @@ steps:
       npm run build --prod
     displayName: '⦿ Lint done & Karma tests is done & [PROD - Build] ➡ Finished ✔'
 
+  - script:
+      ls
+    displayName: '⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿'
+    
   - task: ArchiveFiles@1
     displayName: 'Archive files'
     inputs:
       rootFolder: '$(System.DefaultWorkingDirectory)' #name of your project on angular.json .defaultProject value
       includeRootFolder: false
-
-  - script:
-      ls
-    displayName: '⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿⦿'
 
   - task: CopyFiles@2
     displayName: 'Copy File to: $(TargetFolder)'
